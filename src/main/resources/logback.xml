@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>%highlight(%d{yyyy-MM-dd HH:mm:ss.SSS}) %green(%-5level) %boldCyan(%logger{40}) - %msg%n</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+    </appender>
+
+    <logger name="org.mongodb.driver.cluster" level="ERROR" />
+    <logger name="org.mongodb.driver.client" level="ERROR" />
+
+    <root level="info">
+        <appender-ref ref="STDOUT" />
+    </root>
+</configuration>

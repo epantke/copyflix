@@ -1,0 +1,5 @@
+[repositories]
+  local
+  encoway-sbt-plugins-releases: https://nexus.encoway-services.de/repository/sbt-plugin-releases/, [organization]/[module]/scala_[scalaVersion]/sbt_[sbtVersion]/[revision]/[type]s/[artifact](-[classifier]).[ext]
+  encoway-nexus2-public: https://nexus2.encoway-services.de/content/groups/public/
+  encoway-nexus2-encoway: https://nexus2.encoway-services.de/content/groups/encoway/
